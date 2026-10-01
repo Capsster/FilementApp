@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/addRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText android:id="@+id/brandInput"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="Mærke (fx Bambu Lab)" android:inputType="text" />
+
+        <EditText android:id="@+id/materialInput"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="Materiale (fx PLA)" android:inputType="text" />
+
+        <EditText android:id="@+id/colorInput"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="Farve" android:inputType="text" />
+
+        <EditText android:id="@+id/totalInput"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="Total vægt i gram (fx 1000)" android:inputType="number" />
+
+        <EditText android:id="@+id/remainingInput"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="Gram tilbage" android:inputType="number" />
+
+        <EditText android:id="@+id/priceInput"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="Pris i kr (valgfrit)" android:inputType="numberDecimal" />
+
+        <EditText android:id="@+id/notesInput"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="Note (valgfrit)" android:inputType="text" />
+
+        <EditText android:id="@+id/dateInput"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="Købsdato (tryk for at vælge)"
+            android:focusable="false"
+            android:clickable="true"
+            android:inputType="none" />
+
+        <Button android:id="@+id/saveButton"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" android:text="Gem spole" />
+    </LinearLayout>
+</ScrollView>
